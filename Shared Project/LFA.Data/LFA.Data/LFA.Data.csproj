@@ -39,8 +39,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Comment.cs" />
+    <Compile Include="MyDataExtension.cs" />
+    <Compile Include="Post.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LFAUser.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="SelectData.cs" />
+    <Compile Include="StoredProcedure.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

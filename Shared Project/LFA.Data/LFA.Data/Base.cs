@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LFA.Common
+namespace LFA.Data
 {
-    public class Class1
+    public class Base
     {
+        public int UpdateUserID { get; set; }
+        public DateTime UpdateDate { get; set; }
     }
 }
