@@ -159,7 +159,17 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CommentController.cs" />
+    <Compile Include="Controllers\FacilatorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LFACommentsController.cs" />
+    <Compile Include="Controllers\LFAPostsController.cs" />
+    <Compile Include="Controllers\LFARolesController.cs" />
+    <Compile Include="Controllers\LFAUserController.cs" />
+    <Compile Include="Controllers\PostController.cs" />
+    <Compile Include="Controllers\RolesController.cs" />
+    <Compile Include="Controllers\StudentsController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -214,6 +224,53 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Roles\Index.cshtml" />
+    <Content Include="Views\Roles\About.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
+    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\Create.cshtml" />
+    <Content Include="Views\Users\Edit.cshtml" />
+    <Content Include="Views\Users\Delete.cshtml" />
+    <Content Include="Views\Post\Index.cshtml" />
+    <Content Include="Views\Post\Details.cshtml" />
+    <Content Include="Views\Post\Create.cshtml" />
+    <Content Include="Views\Post\Edit.cshtml" />
+    <Content Include="Views\Post\Delete.cshtml" />
+    <Content Include="Views\LFARoles\Create.cshtml" />
+    <Content Include="Views\LFARoles\Delete.cshtml" />
+    <Content Include="Views\LFARoles\Details.cshtml" />
+    <Content Include="Views\LFARoles\Edit.cshtml" />
+    <Content Include="Views\LFARoles\Index.cshtml" />
+    <Content Include="Views\LFAUser\Create.cshtml" />
+    <Content Include="Views\LFAUser\Delete.cshtml" />
+    <Content Include="Views\LFAUser\Details.cshtml" />
+    <Content Include="Views\LFAUser\Edit.cshtml" />
+    <Content Include="Views\LFAUser\Index.cshtml" />
+    <Content Include="Views\LFAPosts\Create.cshtml" />
+    <Content Include="Views\LFAPosts\Delete.cshtml" />
+    <Content Include="Views\LFAPosts\Details.cshtml" />
+    <Content Include="Views\LFAPosts\Edit.cshtml" />
+    <Content Include="Views\LFAPosts\Index.cshtml" />
+    <Content Include="Views\LFAComments\Create.cshtml" />
+    <Content Include="Views\LFAComments\Delete.cshtml" />
+    <Content Include="Views\LFAComments\Details.cshtml" />
+    <Content Include="Views\LFAComments\Edit.cshtml" />
+    <Content Include="Views\LFAComments\Index.cshtml" />
+    <Content Include="Views\Comment\index.cshtml" />
+    <Content Include="Views\Comment\Details.cshtml" />
+    <Content Include="Views\Comment\Create.cshtml" />
+    <Content Include="Views\Comment\Edit.cshtml" />
+    <Content Include="Views\Comment\Delete.cshtml" />
+    <Content Include="Views\Students\Create.cshtml" />
+    <Content Include="Views\Students\Delete.cshtml" />
+    <Content Include="Views\Students\Details.cshtml" />
+    <Content Include="Views\Students\Edit.cshtml" />
+    <Content Include="Views\Students\Index.cshtml" />
+    <Content Include="Views\Facilators\Create.cshtml" />
+    <Content Include="Views\Facilators\Delete.cshtml" />
+    <Content Include="Views\Facilators\Details.cshtml" />
+    <Content Include="Views\Facilators\Edit.cshtml" />
+    <Content Include="Views\Facilators\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -224,6 +281,20 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared Project\LFA.Biz\LFA.Biz\LFA.Biz.csproj">
+      <Project>{3cc12401-f48d-46ac-a11b-5989f761db9d}</Project>
+      <Name>LFA.Biz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Shared Project\LFA.Common\LFA.Common\LFA.Common.csproj">
+      <Project>{17d6e27d-c896-43ae-b732-1b0c25826c24}</Project>
+      <Name>LFA.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Shared Project\LFA.Data\LFA.Data\LFA.Data.csproj">
+      <Project>{80891f64-c499-4220-8fea-9acc9b5e1b5c}</Project>
+      <Name>LFA.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

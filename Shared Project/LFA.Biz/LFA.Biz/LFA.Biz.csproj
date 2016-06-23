@@ -39,9 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ado\CommentsRepository.cs" />
+    <Compile Include="Ado\PostRepository.cs" />
+    <Compile Include="Ado\RoleRepository.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserRepository.cs" />
+    <Compile Include="Ado\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\LFA.Data\LFA.Data\LFA.Data.csproj">

@@ -1,0 +1,37 @@
+﻿@model IEnumerable<LFA.Data.Role>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Roles</h2>
+@*<div>
+        @{
+            var objRole = (LFA.Data.Role)ViewBag.Role;
+        }
+        <p>@objRole.RoleId</p>
+        <p>@objRole.RoleName</p>
+        <P>@objRole.RoleDesc</P>
+    </div>
+    <p>@Model.First()</p>*@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <td>Role ID</td>
+                <td>Role Name</td>
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+
+            <tbody>
+                <tr>
+                    <td>@item.RoleId</td>
+                    <td>@item.RoleName</td>
+                </tr>
+            </tbody>
+
+        }
+    </table>
+</div>
+
